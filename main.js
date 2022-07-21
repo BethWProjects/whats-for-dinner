@@ -1,4 +1,8 @@
 //query selectors go here
+var radioInputSide = document.querySelector('.side')
+var radioInputMain = document.querySelector('.main-dish')
+var radioInputDessert = document.querySelector('.dessert')
+var radioInputEntire = document.querySelector('.entire-meal')
 
 //array data to use:
 var sides = [
@@ -26,4 +30,5 @@ var desserts [
 //event listeners and functions go here:
 //toggle
 //input radio data from arrays
-//create event listeners for let's cook button and clear button. 
+//create event listeners for let's cook button and clear button.
+//use hidden as toggle to
