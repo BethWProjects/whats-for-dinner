@@ -31,18 +31,46 @@ var desserts = [
 
 //event listeners and functions go here:
 //create an object variable for the food type and answer
+
+
+function getRandomIndex(array) {
+  var index = Math.floor(Math.random() * array.length);
+  return array[index]
+}
+
+function getRandomSides() {
+  sidesArray = getRandomIndex(sides)
+  console.log(sidesArray)
+}
+getRandomSides()
+
+function getRandomMainDish() {
+  mainDishArray = getRandomIndex(mainDish)
+  console.log(mainDishArray)
+}
+getRandomMainDish()
+
+function getRandomDesserts(){
+  dessertsArray = getRandomIndex(desserts)
+  console.log(dessertsArray)
+}
+getRandomDesserts()
+
+
 var foodType = {
   answer: 'you should make:',
   food: 'salmon'
 }
 
 letsCookButton.addEventListener('click', updateAnswer)
+//add event listeners for the radio buttons to invoke the random food functions created above
 
 function updateAnswer() {
   var selectedAnswer =
   document.querySelector('input[name="food-type"]:checked').value;
     if (selectedAnswer === 'side') {
       foodType.food = 'Caesar Salad'
+      //if answer is the variable name of the radio input selector???
       displayAnswer()
       // h2.innerHTML = `${foodType.answer} Caesar salad`
   } if (selectedAnswer === 'main-dish') {
@@ -65,7 +93,8 @@ function displayAnswer(){
   h2.innerHTML = `${foodType.answer} ${foodType.food}`
 }
 
-displayAnswer()
+//displayAnswer() //was invoking the variable foodType on page load.
+
 //toggle
 //input radio data from arrays
 //create event listeners for let's cook button and clear button.
