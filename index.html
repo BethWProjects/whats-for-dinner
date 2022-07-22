@@ -13,7 +13,7 @@
     <section class="main-container">
       <section class="container">
         <article class="cards">
-          <h1 class="card-one-title">What are you looking for?</h1>
+          <h1 class="card-one-title">What are you looking for?<strong>&ast;</strong></h1>
           <form>
             <input type='radio' name='food-type' value='side' class="side">Side<br>
             <input type='radio' name='food-type' value='main-dish' class="main-dish">Main Dish<br>
@@ -30,11 +30,11 @@
         </div>
           <h2></h2>
         </div>
-          <!-- <div = class="answer-section"
-          <h1 class="card-two-title"><em>You should make:</em></h1>
-          <p class="card-two-answer">Black Forest Cake!</p>
-          <button class="clear-button">Clear</button>
-        </div> -->
+          <div = class="answer-section hidden">
+            <h1 class="card-two-title"><em>You should make:</em></h1>
+            <p class="card-two-answer">${foodType.food}</p>
+            <button class="clear-button">Clear</button>
+          </div>
         </article>
           <!-- </section> -->
       </section>

@@ -5,6 +5,10 @@ var radioInputDessert = document.querySelector('.dessert')
 var radioInputEntire = document.querySelector('.entire-meal')
 var letsCookButton = document.querySelector('.lets-cook-button')
 var h2 = document.querySelector('h2')
+var potImage = document.querySelector('.pot-image')
+var answerSection = document.querySelector('.answer-section')
+// var clearButton = document.querySelector('.clear-button')
+//var clearTwoButton = document.querySelector('button').toggle
 
 //array data to use:
 var sides = [
@@ -31,30 +35,10 @@ var desserts = [
 
 //event listeners and functions go here:
 //create an object variable for the food type and answer
-
-
 function getRandomIndex(array) {
   var index = Math.floor(Math.random() * array.length);
   return array[index]
 }
-
-// function getRandomSides() {
-//   sidesArray = getRandomIndex(sides)
-//   console.log(sidesArray)
-// }
-// getRandomSides()
-
-// function getRandomMainDish() {
-//   mainDishArray = getRandomIndex(mainDish)
-//   console.log(mainDishArray)
-// }
-// getRandomMainDish()
-
-function getRandomDesserts(){
-  dessertsArray = getRandomIndex(desserts)
-  console.log(dessertsArray)
-}
-getRandomDesserts()
 
 
 var foodType = {
@@ -63,6 +47,21 @@ var foodType = {
 }
 
 letsCookButton.addEventListener('click', updateAnswer)
+letsCookButton.addEventListener('click', hidePot)
+letsCookButton.addEventListener('click', showAnswer)
+//ADDING NEW BUTTON TAG FOR ONLY THE CLEAR BUTTON TO SHOW AND HIDE
+
+function hidePot(){
+  potImage.classList.add('hidden')
+}
+
+function showAnswer(){
+  answerSection.classList.remove('hidden')
+}
+
+// function clearMessage(){
+//   answerSection.classList.add('hidden')
+// }
 //add event listeners for the radio buttons to invoke the random food functions created above
 
 function updateAnswer() {
@@ -90,8 +89,16 @@ function updateAnswer() {
 }
 
 function displayAnswer(){
-  h2.innerHTML = `${foodType.answer} ${foodType.food}`
+  answerSection.innerHTML = '';
+  answerSection.innerHTML += `<h1 class="card-two-title"><em>You should make:</em></h1>
+    <p class="card-two-answer">${foodType.food}</p>
+    <button class="clear-button">Clear</button>`
 }
+
+
+// function displayAnswer(){
+//   h2.innerHTML = `${foodType.answer} ${foodType.food}`
+// }
 
 //displayAnswer() //was invoking the variable foodType on page load.
 

@@ -35,6 +35,10 @@ nav {
   width: 500px;
 }
 
+strong {
+  color: red;
+}
+
 .pot {
   display: flex;
   flex-direction: column;
@@ -49,7 +53,7 @@ nav {
 }
 
 .hidden {
-  visibility: hidden;
+  display: none;
 }
 
 .card-one-title {
@@ -105,6 +109,9 @@ p {
   border: none;
   align-self: flex-end;
   margin-top: 120px
+}
+
+h2 {
 
 }
 
