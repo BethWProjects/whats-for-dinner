@@ -38,17 +38,17 @@ function getRandomIndex(array) {
   return array[index]
 }
 
-function getRandomSides() {
-  sidesArray = getRandomIndex(sides)
-  console.log(sidesArray)
-}
-getRandomSides()
+// function getRandomSides() {
+//   sidesArray = getRandomIndex(sides)
+//   console.log(sidesArray)
+// }
+// getRandomSides()
 
-function getRandomMainDish() {
-  mainDishArray = getRandomIndex(mainDish)
-  console.log(mainDishArray)
-}
-getRandomMainDish()
+// function getRandomMainDish() {
+//   mainDishArray = getRandomIndex(mainDish)
+//   console.log(mainDishArray)
+// }
+// getRandomMainDish()
 
 function getRandomDesserts(){
   dessertsArray = getRandomIndex(desserts)
@@ -69,16 +69,16 @@ function updateAnswer() {
   var selectedAnswer =
   document.querySelector('input[name="food-type"]:checked').value;
     if (selectedAnswer === 'side') {
-      foodType.food = 'Caesar Salad'
+      foodType.food = getRandomIndex(sides)
       //if answer is the variable name of the radio input selector???
       displayAnswer()
       // h2.innerHTML = `${foodType.answer} Caesar salad`
   } if (selectedAnswer === 'main-dish') {
-      foodType.food = 'Hamburgers'
+      foodType.food = getRandomIndex(mainDish)
       displayAnswer()
     // h2.innerHTML = `${foodType.answer}  Hamburgers`
   } if (selectedAnswer === 'dessert') {
-      foodType.food = 'Chocolate Cake'
+      foodType.food = getRandomIndex(desserts)
       displayAnswer()
     // h2.innerHTML = `${foodType.answer}  Cookies`
   } if (selectedAnswer === 'entire-meal') {
