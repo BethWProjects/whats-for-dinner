@@ -42,16 +42,16 @@ letsCookButton.addEventListener('click', hidePot)
 letsCookButton.addEventListener('click', showAnswer)
 clearButton.addEventListener('click', clearMessage)
 
-function hidePot() {
+function hidePot(){
   potImage.classList.add('hidden')
   clearButton.classList.remove('hidden')
 }
 
-function showAnswer() {
+function showAnswer(){
   answerSection.classList.remove('hidden')
 }
 
-function clearMessage() {
+function clearMessage(){
   answerSection.classList.add('hidden')
   clearButton.classList.add('hidden')
   potImage.classList.remove('hidden')
@@ -64,27 +64,24 @@ var foodType = {
 
 function updateAnswer() {
   var selectedAnswer =
-    document.querySelector('input[name="food-type"]:checked').value;
-  if (selectedAnswer === 'side') {
-    foodType.food = getRandomIndex(sides)
-    displayAnswer()
-  }
-  if (selectedAnswer === 'main-dish') {
-    foodType.food = getRandomIndex(mainDish)
-    displayAnswer()
-  }
-  if (selectedAnswer === 'dessert') {
-    foodType.food = getRandomIndex(desserts)
-    displayAnswer()
-  }
-  if (selectedAnswer === 'entire-meal') {
-    foodType.food = 'Filet Mignon, Chopped Salad and Creme Brulet'
-    displayAnswer()
+  document.querySelector('input[name="food-type"]:checked').value;
+    if (selectedAnswer === 'side') {
+      foodType.food = getRandomIndex(sides)
+      displayAnswer()
+  } if (selectedAnswer === 'main-dish') {
+      foodType.food = getRandomIndex(mainDish)
+      displayAnswer()
+  } if (selectedAnswer === 'dessert') {
+      foodType.food = getRandomIndex(desserts)
+      displayAnswer()
+  } if (selectedAnswer === 'entire-meal') {
+      foodType.food = 'Filet Mignon, Chopped Salad and Creme Brulet'
+      displayAnswer()
   }
   console.log(foodType.answer, foodType.food)
 }
 
-function displayAnswer() {
+function displayAnswer(){
   answerSection.innerHTML = '';
   answerSection.innerHTML += `<h1 class="card-two-title"><em>You should make:</em></h1>
     <p class="card-two-answer">${foodType.food}</p>`
