@@ -51,7 +51,6 @@ strong {
 }
 .pot-image {
   max-width: 100px;
-
 }
 
 .hidden {
@@ -79,16 +78,6 @@ input[type="radio"] {
   margin-top: 5px;
 }
 
-/* .answer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.answer {
-  border: 5px solid pink;
-} */
-
 .card-two-title {
   font-size: 16px;
   text-align: center;
@@ -101,14 +90,14 @@ p {
 
 .clear-button {
   background-color: #95a5a6;
-  color: rgba(225, 225, 225, .9);
-  padding: 7px 25px;
+  color: #ffffff;
+  padding: 7px 20px;
   border-radius: 5%;
   border: none;
   align-self: flex-end;
-  margin-top: 20px;
+  margin-top: 80px;
+  margin-left: 250px
 }
-
 
 
 /* font-family: 'Roboto', sans-serif;

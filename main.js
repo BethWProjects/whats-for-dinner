@@ -68,19 +68,15 @@ function updateAnswer() {
     if (selectedAnswer === 'side') {
       foodType.food = getRandomIndex(sides)
       displayAnswer()
-      // h2.innerHTML = `${foodType.answer} Caesar salad`
   } if (selectedAnswer === 'main-dish') {
       foodType.food = getRandomIndex(mainDish)
       displayAnswer()
-    // h2.innerHTML = `${foodType.answer}  Hamburgers`
   } if (selectedAnswer === 'dessert') {
       foodType.food = getRandomIndex(desserts)
       displayAnswer()
-    // h2.innerHTML = `${foodType.answer}  Cookies`
   } if (selectedAnswer === 'entire-meal') {
       foodType.food = 'Filet Mignon, Chopped Salad and Creme Brulet'
       displayAnswer()
-    //h2.innerHTML = `${foodType.answer}  Filet Mignon, Caesar Salad and Chocolate Cake`
   }
   console.log(foodType.answer, foodType.food)
 }
@@ -90,10 +86,3 @@ function displayAnswer(){
   answerSection.innerHTML += `<h1 class="card-two-title"><em>You should make:</em></h1>
     <p class="card-two-answer">${foodType.food}</p>`
 }
-
-//<button class="clear-button">Clear</button>
-//toggle
-//input radio data from arrays
-//create event listeners for let's cook button and clear button.
-//use hidden as toggle to
-//get value from radio button
