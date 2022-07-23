@@ -18,18 +18,12 @@ nav {
   justify-content: space-between;
 }
 
-.main-container {
-  border: 5px solid red;
-}
-
 .container {
-  border: 5px solid blue;
   display: flex;
   justify-content: space-evenly;
 }
 
 .cards {
-  border: 5px solid green;
   background-color: rgb(255, 255, 255, .8);
   margin: 100px;
   padding: 60px 70px;
