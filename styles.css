@@ -14,36 +14,47 @@ body {
 nav {
   background-color: #0fb9b1;
   padding: 10px 20px;
-}
-
-.main-container {
-  border: 5px solid red;
+  display: flex;
+  justify-content: space-between;
 }
 
 .container {
-  border: 5px solid blue;
   display: flex;
   justify-content: space-evenly;
 }
 
 .cards {
-  border: 5px solid green;
   background-color: rgb(255, 255, 255, .8);
   margin: 100px;
   padding: 60px 70px;
   color: black;
+  width: 500px;
+}
 
+strong {
+  color: red;
+}
+
+.pot {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: space-around;
+  padding-top: 50px;
+}
+.pot-image {
+  max-width: 100px;
+}
+
+.hidden {
+  display: none;
 }
 
 .card-one-title {
   padding-bottom: 15px;
   font-size: 24px;
-
 }
-/* ul {
-  list-style-position: inside;
-  padding-left: 10px;
-} */
 
 input[type="radio"] {
   margin-right: 10;
@@ -61,13 +72,23 @@ input[type="radio"] {
   margin-top: 5px;
 }
 
+.card-two-title {
+  font-size: 16px;
+  text-align: center;
+}
 
-/* font-family: 'Roboto', sans-serif;
+p {
+  font-size: 24px;
+  text-align: center;
+}
 
-COLORS
-teal - #0fb9b1;
-frosted white - rgba(225, 225, 225, .9);
-grey - #95a5a6;
-red - #ee5253
-
-*/
+.clear-button {
+  background-color: #95a5a6;
+  color: #ffffff;
+  padding: 7px 20px;
+  border-radius: 5%;
+  border: none;
+  align-self: flex-end;
+  margin-top: 80px;
+  margin-left: 250px
+}
