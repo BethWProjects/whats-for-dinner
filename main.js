@@ -57,32 +57,25 @@ function clearMessage(){
   potImage.classList.remove('hidden')
 }
 
-var foodType = {
-  answer: 'you should make:',
-  food: 'salmon'
-}
+var foodType;
 
 function updateAnswer() {
   var selectedAnswer =
   document.querySelector('input[name="food-type"]:checked').value;
     if (selectedAnswer === 'side') {
-      foodType.food = getRandomIndex(sides)
+      foodType = getRandomIndex(sides)
       displayAnswer()
   } if (selectedAnswer === 'main-dish') {
-      foodType.food = getRandomIndex(mainDish)
+      foodType = getRandomIndex(mainDish)
       displayAnswer()
   } if (selectedAnswer === 'dessert') {
-      foodType.food = getRandomIndex(desserts)
-      displayAnswer()
-  } if (selectedAnswer === 'entire-meal') {
-      foodType.food = 'Filet Mignon, Chopped Salad and Creme Brulet'
+      foodType = getRandomIndex(desserts)
       displayAnswer()
   }
-  console.log(foodType.answer, foodType.food)
 }
 
 function displayAnswer(){
   answerSection.innerHTML = '';
   answerSection.innerHTML += `<h1 class="card-two-title"><em>You should make:</em></h1>
-    <p class="card-two-answer">${foodType.food}</p>`
+    <p class="card-two-answer">${foodType}</p>`
 }
