@@ -1,23 +1,41 @@
-# What's for Dinner?
-
-## Overview
-
-What's for dinner? The ultimate question. You will be building an app that helps users choose a recipe and put together meals. 
-
-This Solo Challenge gives students and instructors the opportunity to get a pulse on where you are with the foundational concepts of Module 1 curriculum. Students should use this as an opportunity to challenge themselves and work completely independently. Google can (and probably should!) be used, but any other code base should not be referenced. Instructors will be able to use your work, both completion of functionality and code quality, to determine where you stand and if you are behind for this point in the module, provide supports to intervene.
-
-The spec for this project can be found [here](https://frontend.turing.io/projects/module-1/dinner.html). 
-
-## Learning Goals
-
-- Gain experience building an application that utilizes HTML, CSS and JavaScript
-- Write HTML and CSS to match a provided comp
-- Understand how to listen to and respond to user events
-- Individualize your programming skill set
-
-## Setup
-
-- Fork this project to your own Github account
-- Clone the repository to your local machine
-- `cd` into the project
-- Read this README thoroughly, then begin working!
+# What’s For Dinner?
+## Table of Contents
+  - [Introduction](#introduction)
+  - [Technologies](#technologies)
+  - [Features](#features)
+  - [Illustrations](#illustrations)
+  - [Deployed Page](#deployed-page)
+  - [Possible Future Extensions](#possible-future-extensions)
+  - [Set Up](#set-up)
+  - [Organizational Resources](#organizational-resources)
+  - [Sources](#sources)
+  - [Contributors](#contributors)
+  - [Project Specs](#project-specs)
+## Introduction
+  - The purpose of this project was to work on the fundamentals of building a website and interacting with the DOM.  
+## Technologies
+  - Javascript
+  - HTML
+  - CSS
+## Illustrations
+  ![What’s For Dinner?](https://frontend.turing.edu/projects/module-1/assets/dinner/dinner_0.png)
+## Features
+- Any of the radio buttons chosen will output a random item from that array.
+- The Choose Your Own Adventure I chose was the Clear Button functionality.  When a user selects a food type, they can click through options, or click the Clear Button to close out the suggested option shown. This will hide/show a crockpot image on the second card shown on the page.
+## Deployed Page
+Visit my Whats for Dinner site here! [here](https://bethwprojects.github.io/whats-for-dinner/)
+## Possible Future Extensions
+  - A login page would be great for the user to save recipes.
+  - Adding a favorites page with recipe instructions would be nice.
+## Set Up
+1. Fork this repo
+2. Clone the repo to your local machine
+3. View the project in the browser by running open index.html in your terminal.
+## Sources
+  - [MDN](
+  -[YouTube](
+  - [W3Schools]
+## Contributors
+  - [Beth]
+## Project Specs
+https://bethwprojects.github.io/whats-for-dinner/
